@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:text="noteCRYPT v2"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/withSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Intro"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Secured option: use your own key,
+                      only works if device credentials are setup. "
+        android:textColor="@color/black"
+        android:textSize="19dp" />
+
+       <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/withSecurity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFF00"
+        android:text="Login using Device credentials"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/noSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="use the basic option if you haven't already
+         setup your device credentials"
+        android:textColor="@color/black"
+        android:textSize="19dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noSecurity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFF00"
+        android:text="Use the basic functionality"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_marginTop="288dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:text="This app was developed to fulfill the requirements of the Mobile Security Coursework
+        by Vamsi Potukuchi (K2159656)."
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+</RelativeLayout>
